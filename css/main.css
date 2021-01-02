@@ -1,1 +1,125 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (min-width: 860) {
+  body h1 {
+    font-size: 1rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #525252;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h3 {
+  color: gray;
+  font-weight: 200;
+  font: size 0.7rem;
+}
+
+h3 span {
+  color: #131313;
+  font-weight: 800;
+}
+
+.image-container p {
+  font-size: 0.7rem;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  margin: 0 5%;
+  padding-top: 1rem;
+}
+
+nav .logo {
+  width: 40px;
+}
+
+nav .navigation {
+  text-align: right;
+  line-height: 3;
+}
+
+nav .navigation a {
+  margin-left: 1rem;
+}
+
+main .header {
+  background-image: url("/images/main_imgae.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 860px) {
+  main .header {
+    height: 500px;
+  }
+}
+
+main .double-col {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (min-width: 860px) {
+  main .double-col {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  main .triple-col {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+main .header-container {
+  margin: 1rem 0;
+}
+
+.btn-container {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.btn-container .btn {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+footer {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

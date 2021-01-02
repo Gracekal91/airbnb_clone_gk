@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    @media screen and(min-width: 860) {
+        h1 {
+            font-size: 1rem;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h3 {
+    color: gray;
+    font-weight: 200;
+    font: size 0.7rem;
+    span {
+        color: #131313;
+        font-weight: 800;
+    }
+}
+
+.image-container {
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+//Navigation
+nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 0 5%;
+    padding-top: 1rem;
+    .logo {
+        width: 40px;
+    }
+    .navigation {
+        text-align: right;
+        line-height: 3;
+        a {
+            margin-left: 1rem;
+        }
+    }
+}
+
+//Main
+main {
+    //header
+    .header {
+        background-image: url('/images/main_imgae.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        margin-top: 1.5rem;
+        @media screen and (min-width: 860px) {
+            height: 500px;
+        }
+    }
+    .double-col {
+        display: grid;
+        @media screen and (min-width: 860px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+        }
+    }
+    .triple-col {
+        @media screen and (min-width: 860px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1rem;
+        }
+    }
+    .header-container {
+        margin: 1rem 0;
+    }
+}
+
+.btn-container {
+    padding: 3rem 0;
+    text-align: center;
+    .btn {
+        padding: 1rem 2rem;
+        cursor: pointer;
+        font-size: 1.1rem;
+    }
+}
+
+footer {
+    text-align: center;
+}
