@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+$text-primary:#2c2c2c;
+$text-secondary: #222222bb;
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
+    color: $text-primary;
     @media screen and(min-width: 860) {
         h1 {
             font-size: 1rem;
         }
     }
+}
+
+input::placeholder {
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 a {
@@ -30,7 +37,16 @@ h3 {
     font-weight: 200;
     font: size 0.7rem;
     span {
-        color: #131313;
+        color: $text-secondary;
+        font-weight: 800;
+    }
+}
+
+h1 {
+    font-weight: 400;
+    color: $text-secondary;
+    span {
+        color: #2c2c2c;
         font-weight: 800;
     }
 }
@@ -73,12 +89,25 @@ main {
             height: 500px;
         }
     }
+    .header-container-1 {
+        position: relative;
+        height: 250px;
+    }
+    .header-container {
+        @media screen and(min-width: 860px) {
+            width: 50%;
+            height: fit-content;
+            background: #ffffff;
+            position: absolute;
+        }
+    }
     .double-col {
         display: grid;
         @media screen and (min-width: 860px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 1rem;
+            margin-bottom: 2rem;
         }
     }
     .triple-col {
@@ -98,11 +127,29 @@ main {
     text-align: center;
     .btn {
         padding: 1rem 2rem;
+        margin-bottom: 3rem;
         cursor: pointer;
         font-size: 1.1rem;
+        border: rgba(128, 128, 128, 0.623) 1px solid;
+    }
+}
+
+form {
+    input {
+        border: rgba(128, 128, 128, 0.623) 1px solid;
+        border-right: none;
+        padding: .6rem 1rem;
+        outline: none;
+    }
+    button {
+        padding: .6rem 1rem;
+        background: none;
+        border: none;
+        border: rgba(128, 128, 128, 0.623) 1px solid;
     }
 }
 
 footer {
     text-align: center;
+    padding: 2rem 0;
 }
